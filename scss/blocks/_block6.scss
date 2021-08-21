@@ -1,0 +1,60 @@
+.section6{
+    height: 300px;
+    background-image: url(/images/Mask.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #495567;
+    margin-top: 200px;
+    &__h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        width: 450px;
+        margin-top: 102px;
+        margin-left: 165px;
+    }
+    &__sub-section{
+        margin-top: 122px;
+        margin-left: 300px;
+    }
+    &__img{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .section6{
+        margin-top: 200px;
+        &__h2{
+            margin-top: 60px;
+            margin-left: 165px;
+            text-align: center;
+        }
+        &__sub-section{
+            margin-top: 200px;
+            margin-left: -420px;
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .section6{
+        height: 320px;
+        background-position-y: bottom;
+        &__h2{
+            font-size: 32px;
+            margin-left: 40px;
+            margin-top: 80px;
+            width: 300px;
+        }
+        &__img{
+            width: 110px;
+            height: 40px;
+        }
+        &__sub-section{
+            margin-top: 10px;
+            margin-left: 60px;
+        }
+    }
+}

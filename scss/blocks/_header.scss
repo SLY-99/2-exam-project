@@ -1,0 +1,99 @@
+.header{
+    height: 96px;
+    display: flex;
+    &__logo{
+        margin-left: 169px;
+        margin-top: 34px;  
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        margin-top: 36px;
+        margin-left: 58px;
+    }
+    &__item{
+        margin-left: 32px;
+    }
+    &__link{
+        color: #939CAA;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-decoration: none;
+    }
+    &__link:active{
+        color: #FCB72B;;
+    }
+    &__btn{
+        width: 180px;
+        height: 53px;
+        background-color: #FCB72B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 22px;
+        margin-left: 511px;
+    }
+    &__btn:hover{
+        border: 3px solid #FCB72B;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+    &__btn:active{
+        border: 3px solid #FCB72B;
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .header{
+        &__logo{
+            margin-left: 39px;
+            margin-top: 34px;  
+        }
+        &__list{
+            margin-top: 36px;
+            margin-left: 0px;
+        }
+        &__item{
+            margin-left: 32px;
+        }
+        &__link:active{
+            color: #FCB72B;;
+        }
+        &__btn{
+            margin-top: 22px;
+            margin-left: 94px;
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .header{
+        height: 64px;
+        &__logo{
+            margin-left: 98px;
+            margin-top: 15px;
+        }
+        &__list{
+            display: none;
+        }
+        &__btn{
+            display: none;
+        }
+    }
+    .header::before{
+        content: url(/images/menu.svg);
+        margin-top: 24px;
+        margin-left: 32px;
+        cursor:pointer;
+    }
+}

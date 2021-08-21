@@ -1,0 +1,130 @@
+.section1{
+    height: 650px;
+    background-image: url(/images/Bitmap1x.png);
+    background-size: cover;
+    &__sub-section{
+        margin-top: 103px;
+        margin-left: 165px;
+    }
+    &__h2{
+        width: 500px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+    &__p{
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        width: 400px;
+        margin-left: 100px;
+        position: relative;
+    }
+    &__p::after{
+        content: url(/images/section2-strelka.svg);
+        position: absolute;
+        top: 45px;
+        left: 450px;
+    }
+    &__p::before{
+        content: url(/images/section2-line.svg);
+        position: absolute;
+        top: 50px;
+        left: -295px;
+    }
+    &__btn{
+        width: 180px;
+        height: 53px;
+        background-color: #FCB72B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+    &__btn:hover{
+        background-color:transparent;
+        border: 3px solid #FCB72B;
+        color: #FCB72B;
+    }
+    &__btn:active{
+        background-color:transparent;
+        border: 3px solid #FCB72B;
+        box-sizing:border-box;
+        color: #FCB72B;
+    }
+}
+@media screen and (max-width:768px) {
+    .section1{
+        height: 650px;
+        background-image: url(/images/intro-tablet.svg);
+        background-size: cover;
+        &__sub-section{
+            margin-top: 90px;
+            margin-left: 150px;
+        }
+        &__h2{
+            text-align: center;
+        }
+        &__p{
+            text-align: center;
+            width: 500px;
+            margin-left: 0px;
+        }
+        &__p::after{
+            content: url(/images/section2-strelka.svg);
+            position: absolute;
+            top: 170px;
+            left: -260px;
+        }
+        &__p::before{
+            display: none;
+        }
+        &__btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .section1{
+        height: 650px;
+        background-image: url(/images/intro-mobile.svg);
+        &__h2{
+            font-size: 40px;
+            width: 300px;
+            text-align: center;
+            margin-left: -110px;
+            margin-top: 0px;
+        }
+        &__p{
+            width: 300px;
+            text-align: center;
+            margin-left: -110px;
+            margin-top: -20px;
+        }
+        &__btn{
+            margin-left: -50px;
+            margin-top: 30px;
+        }
+        &__p::after{
+            content: url(/images/section2-strelka.svg);
+            position: absolute;
+            top: 190px;
+            left: -350px;
+        }
+    }
+    
+}

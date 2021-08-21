@@ -1,0 +1,151 @@
+.section4{
+    height: 450px;
+    margin-top: 155px;
+    &__circle{
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        background-color: #E5ECF4;
+        position: absolute;
+        left: -350px;
+    }
+    &__img{
+        margin-left: 130px;
+    }
+    &__sub-section{
+        margin-top: 30px;
+        margin-left: 250px;
+        position: relative;
+    }
+    &__h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        width: 450px;
+    }
+    &__p{
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        width: 440px;
+    }
+    &__btn{
+        width: 180px;
+        height: 53px;
+        background-color: #FCB72B;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 40px;
+    }
+    &__btn:hover{
+        border: 3px solid #FCB72B;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+    &__btn:active{
+        border: 3px solid #FCB72B;
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #FCB72B;
+    }
+    &__sub-section::before{
+        content: url(/images/section4-strelka.svg);
+        position: absolute;
+        right: 950px;
+        top: -20px;
+        z-index: 1;
+    }
+}
+@media screen and (max-width:768px){
+    .section4{
+        height: 450px;
+        margin-top: 400px;
+        margin-bottom: 800px;
+        &__img{
+            margin-left: 170px;
+        }
+        &__sub-section{
+            margin-top: 480px;
+            margin-left: -450px;
+            position: relative;
+        }
+        &__h2{
+           text-align: center;
+            width: 450px;
+        }
+        &__p{
+            margin-left: -50px;
+            width: 570px;
+            text-align: center;
+        }
+        &__btn{
+            margin-left: 120px;
+        }
+        &__btn:hover{
+            border: 3px solid #FCB72B;
+            background-color: #fff;
+            color: #FCB72B;
+        }
+        &__btn:active{
+            border: 3px solid #FCB72B;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #FCB72B;
+        }
+        &__sub-section::before{
+            content: url(/images/section4-strelka.svg);
+            position: absolute;
+            left: -550px;
+            top: -480px;
+            z-index: 1;
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .section4{
+        margin-bottom: 550px;
+        &__img{
+            width: 311px;
+            height: 311px;
+            margin-left: 30px;
+            margin-top: -50px;
+        }
+        &__sub-section::before{
+            position: absolute;
+            right: -140px;
+            top: -320px;
+        }
+        &__circle{
+            display: none;
+        }
+        &__sub-section{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        &__h2{
+            font-size: 32px;
+            width: 300px;
+            margin-left: -20px;
+        }
+        &__p{
+            width: 280px;
+            margin-left: 0px;
+        }
+        &__btn{
+            margin-left: 50px;
+        }
+    }
+}

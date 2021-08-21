@@ -1,0 +1,112 @@
+.section2{
+    height: 300px;
+    margin-top: 160px;
+    &__line{
+        width: 973px;
+        height: 10px;
+        background-color:#E5ECF4;
+        position: absolute;
+        left: 0;
+        margin-top: 60px;
+        z-index: -1;
+    }
+    &__sub-section{
+        display: flex;
+        margin-left: 100px;
+    }
+    &__list{
+        list-style-type: none;
+    }
+    &__circle{
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background-color: #FCB72B;
+    }
+    &__img{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    &__h4{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+    }
+    &__p{
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        width: 350px;
+    }
+}
+@media screen and (max-width:768px){
+    .section2{
+        height: 573px;
+        margin-top: 122px;
+        position: relative;
+        &__line{
+            width: 550px;
+            height: 15px;
+            background-color:#E5ECF4;
+            position: absolute;
+            left: -130px;
+            top: 80px;
+            transform:rotate(90deg)
+        }
+        &__sub-section{
+            display: flex;
+            flex-direction: column;
+            margin-top: -50px;
+            margin-left:50px ;
+        }
+        &__list{
+            list-style-type: none;
+            margin-bottom:-30px;
+            margin-left: 200px;
+            position: relative;
+        }
+        &__circle{
+          position: absolute;
+          top: 40px;
+          left: -150px;
+        }
+        &__img{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .section2{
+        height: 792px;
+       &__line{
+           display: none;
+       }
+       &__sub-section{
+           margin-left: -230px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       &__circle{
+           position:static;
+           margin-left: 90px;
+       }
+       &__list{
+           margin-top: 80px;
+       }
+       &__h4{
+           margin-left: 40px;
+       }
+       &__p{
+           width: 300px;
+           text-align: center;
+       }
+    }
+}
