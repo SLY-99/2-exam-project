@@ -72,6 +72,10 @@ body {
   color: #FCB72B;
 }
 
+.header__link:hover {
+  color: #FCB72B;
+}
+
 .header__btn {
   width: 180px;
   height: 53px;
@@ -1065,12 +1069,20 @@ body {
   color: #FCB72B;
 }
 
+.footer__link:hover {
+  color: #FCB72B;
+}
+
 .footer__img {
   margin-right: 25px;
   margin-top: 36px;
 }
 
 .footer__img:active path {
+  fill: #E5ECF4;
+}
+
+.footer__img:hover path {
   fill: #E5ECF4;
 }
 

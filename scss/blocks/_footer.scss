@@ -26,11 +26,17 @@
     &__link:active{
         color: #FCB72B;;
     }
+    &__link:hover{
+        color: #FCB72B;;
+    }
     &__img{
         margin-right: 25px;
         margin-top: 36px;
     }
     &__img:active path{
+        fill: #E5ECF4;
+    }
+    &__img:hover path{
         fill: #E5ECF4;
     }
 }
